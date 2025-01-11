@@ -1,0 +1,31 @@
+.card-text {
+  font-size: 10px;
+  color: var(--px-black);
+}
+.card text-bg-dark {
+  position: relative;
+}
+.card-img-overlay {
+  position: absolute;
+  top: auto !important;
+  bottom: 0;
+}
+.card-title {
+  color: var(--px-black);
+}
+.card {
+  position: relative;
+}
+.card::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(4, 12, 22, 0), #040c16);
+}
+.card-title,
+.card-text {
+  color: var(--px-heading);
+}

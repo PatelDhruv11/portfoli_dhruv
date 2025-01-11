@@ -1,0 +1,38 @@
+.img-area {
+  max-width: 100px;
+}
+.img-area img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.single-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 150px;
+  color: var(--px-heading);
+}
+.content-clint {
+  line-height: 1.9;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sec-heading {
+  text-align: center;
+  color: var(--px-heading);
+}
+
+@media screen and (max-width: 600px) {
+  .single-box {
+    margin: 0px 20px;
+  }
+  .content-clint {
+    font-size: 14px;
+  }
+  .img-area {
+    max-width: 80px;
+  }
+}

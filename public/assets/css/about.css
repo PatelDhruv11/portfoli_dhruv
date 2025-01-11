@@ -1,0 +1,110 @@
+.about-box {
+  display: flex;
+  align-items: center;
+}
+
+.about-inner {
+  background: rgba(var(--px-theme-rgb), 0.2);
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--px-white);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.skills-services-table {
+  padding: 20px;
+  background-color: var(--px-slider); /* Optional background color */
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.table th,
+.table td {
+  border: 1px solid var(--px-white);
+  padding: 10px 15px;
+  text-align: left;
+  color: var(--px-white);
+}
+.thead-table {
+  background-color: var(--px-slider);
+}
+.table th {
+  color: var(--px-slider);
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: var(--px-slider);
+}
+
+.table tbody tr:hover {
+  background-color: var(--px-slider);
+}
+
+.effect-1 {
+  -webkit-animation: rotate360 40s linear infinite;
+  animation: rotate360 10s linear infinite;
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  bottom: 0%;
+  z-index: 1;
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(10deg);
+    left: 1ch;
+  }
+  50% {
+    transform: rotate(90deg);
+    left: 20%;
+  }
+  75% {
+    transform: rotate(10deg);
+    left: 30%;
+  }
+  100% {
+    transform: rotate(90deg);
+    left: 40%;
+  }
+}
+
+.effect-2 {
+  -webkit-animation: rotate160 40s linear infinite;
+  animation: rotate160 10s linear infinite;
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  bottom: 0%;
+  z-index: 1;
+}
+@keyframes rotate160 {
+  0% {
+    transform: rotate(10deg);
+    right: 1ch;
+  }
+  50% {
+    transform: rotate(90deg);
+    right: 20%;
+  }
+  75% {
+    transform: rotate(10deg);
+    right: 30%;
+  }
+  100% {
+    transform: rotate(90deg);
+    right: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .effect-1,
+  .effect-2 {
+    display: none;
+  }
+}

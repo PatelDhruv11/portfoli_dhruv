@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhruv Patel</title>
+    <!-- connect css files -->
+    <link rel="stylesheet" href="public/assets/css/style.css" />
+    <!-- boostrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- google fontfamily -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body>
+    <!--=============================Nav Bar ========================-->
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-bcak">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./public/assets/img/logo-5.png" alt="" class="nav-logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-3">
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="#about">ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="#slider">PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="#service">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fs-5" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+            <button
+              class="nav-btn bg-btn text-light"
+              nav-btn
+              bg-btn
+              text-light
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              LET'S TALK
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-scroll="true"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                  >
+                    <path
+                      d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14690.176112741385!2d72.63173285938628!3d23.003788930958414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDAwJzEzLjYiTiA3MsKwMzknMDAuNyJF!5e0!3m2!1sen!2sin!4v1736398279750!5m2!1sen!2sin"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="mt-3">
+                  <label class="text-light"> Write an e-mail :- </label>
+                  <a
+                    class="text-light text-decoration-none"
+                    href="mailto:dhruv.patel02012003@gmail.com"
+                  >
+                    <br />
+                    <i class="fa-solid fa-envelope me-2"></i
+                    >dhruv.patel02012003@gmail.com</a
+                  >
+                </div>
+                <div class="mt-3">
+                  <label class="text-light"> Call ME :- </label>
+                  <a
+                    class="text-light text-decoration-none"
+                    href="tel:+918160149409"
+                    ><br />
+                    <i class="fa-solid fa-phone me-2"></i>
+                    +91 8160149409</a
+                  >
+                </div>
+                <div class="container text-light text-center py-3">
+                  <ul class="social-media">
+                    <li class="social-i">
+                      <a href="" class="footer-icon" type="button"
+                        ><i class="fa-brands fa-facebook icon"></i
+                      ></a>
+                    </li>
+                    <li class="social-i">
+                      <a
+                        href="https://www.instagram.com/_dp_patel_11/?hl=en"
+                        class="footer-icon"
+                        type="button"
+                      >
+                        <i class="fa-brands fa-instagram icon"></i
+                      ></a>
+                    </li>
+                    <li class="social-i">
+                      <a href="" class="footer-icon" type="button"
+                        ><i class="fa-brands fa-twitter icon"></i
+                      ></a>
+                    </li>
+                    <li class="social-i">
+                      <a
+                        href="https://www.linkedin.com/in/patel-dhruv-b13023229/"
+                        class="footer-icon"
+                        type="button"
+                        ><i class="fa-brands fa-linkedin icon"></i
+                      ></a>
+                    </li>
+                    <li class="social-i">
+                      <a
+                        href="https://github.com/PatelDhruv11"
+                        class="footer-icon"
+                        type="button"
+                        ><i class="fa-brands fa-github icon"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <hr />
+                  <label
+                    >© 2025 copyright all right reserved Created By Dhurv
+                    Patel</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- cursor -->
+    <div class="cursor-blur"></div>
+
+    <!-- =========================== hero section ======================= -->
+    <main class="bg-key">
+      <section class="hero-section d-flex align-items-center">
+        <div class="container py-5">
+          <div
+            class="row d-flex align-items-center justify-content-around hero-flex"
+          >
+            <div class="col-lg-6 col-md-7 col-sm-6 col-12 mt-3">
+              <div class="dp-hader text-light">DHRUV PATEL</div>
+              <h1 class="text-light fs-md-4">
+                HAY! <span id="auto-type" class="text-info"></span>
+              </h1>
+              <h1 class="text-light">
+                I'M <span class="text-info">A DESIGNER</span>
+              </h1>
+
+              <p class="text-light p-txt">
+                Over the years, I've honed my skills in
+                <strong>HTML, CSS, JavaScript</strong>, and modern frameworks
+                like React and Angular. My mission is to help businesses and
+                individuals achieve their goals through innovative web
+                solutions.
+              </p>
+              <div
+                class="d-flex align-items-center name-btn flex-wrap flex-sm-wrap"
+              >
+                <div>
+                  <a class="nav-btn bg-btn text-light" href="#" role="button"
+                    ><span>GET ' IN TOUCH</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+                <div class="social-iocn">
+                  <a
+                    href="https://www.linkedin.com/in/patel-dhruv-b13023229/"
+                    type="button"
+                  >
+                    <i class="fa-brands fa-linkedin text-light"></i>
+                  </a>
+                  <a href="#" type="button">
+                    <i class="fa-brands fa-facebook text-light"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-6 col-12 img-container">
+              <img src="./public/assets/img/my-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================== slider language =================== -->
+    <section>
+      <div class="container mt-4">
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <a href="#" class="languageiconlink">
+                <i class="fa-brands fa-html5 languageiconmarquee"></i>
+                <span class="langutxat"> HTML</span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#" class="languageiconlink">
+                <i class="fa-brands fa-css3-alt languageiconmarquee"></i>
+                <span class="langutxat"> CSS</span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#" class="languageiconlink">
+                <i class="fa-brands fa-js languageiconmarquee"></i>
+                <span class="langutxat"> JavaScript</span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#" class="languageiconlink">
+                <i class="fa-brands fa-bootstrap languageiconmarquee"></i>
+                <span class="langutxat"> Bootstrap</span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#" class="languageiconlink">
+                <i class="fa-brands fa-node-js languageiconmarquee"></i>
+                <span class="langutxat"> Node.js</span>
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#" class="languageiconlink">
+                <i class="fa-brands fa-react languageiconmarquee"></i>
+                <span class="langutxat">React.js</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================about us======================= -->
+    <main id="about">
+      <section class="about-section mt-4">
+        <div class="container mt-5">
+          <div class="effect-1">
+            <img
+              src="https://janna-react.vercel.app/images/effect-2.svg"
+              alt=""
+            />
+          </div>
+          <div class="effect-2">
+            <img
+              src="https://janna-react.vercel.app/images/effect-2.svg"
+              alt=""
+            />
+          </div>
+          <div class="row d-flex align-items-center justify-content-around">
+            <div
+              class="col-lg-6 col-md-5 col-sm-5 col-12 mt-sm-3 img-container"
+            >
+              <img src="./public/assets/img/my-2.png" alt="" />
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-7 col-12">
+              <div class="dp-hader text-light mt-3">ABOUT US</div>
+              <div class="text-light mt-2">
+                <h2>Hi, I'M DHRUV PATEL</h2>
+                <p class="p-txt">
+                  I'm a passionate <strong>web developer</strong> with a knack
+                  for crafting elegant and functional websites. With a deep love
+                  for technology and design, I specialize in creating seamless
+                  user experiences that bring ideas to life.
+                </p>
+                <p class="text-light p-txt">
+                  <span class="text-info"> Frontend Development: </span>
+                  Bringing ideas to life with HTML, CSS, JavaScript, and modern
+                  frameworks like React.
+                </p>
+                <p class="text-light p-txt">
+                  <span class="text-info"> Backend Development: </span> Building
+                  robust, scalable solutions using Node.js, PHP, or Python.
+                </p>
+                <div
+                  class="d-flex align-items-center name-btn flex-wrap flex-sm-wrap"
+                >
+                  <div>
+                    <a
+                      class="nav-btn bg-btn text-light"
+                      href="./public/assets/CV_PDF/DHRUV PATEL_CV.pdf"
+                      role="button"
+                      ><span>GET's CV</span>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="social-iocn">
+                    <a
+                      href="https://www.linkedin.com/in/patel-dhruv-b13023229/"
+                      type="button"
+                    >
+                      <i class="fa-brands fa-linkedin text-light"></i>
+                    </a>
+                    <a href="#" type="button">
+                      <i class="fa-brands fa-facebook text-light"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="col-lg-10">
+              <h3 class="dp-hader text-light text-center mt-4">
+                Skills <span class="text-info">and</span> Services
+              </h3>
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                  <thead class="thead-table">
+                    <tr>
+                      <th class="text-info text-center">My Skills</th>
+                      <th class="text-info text-center">What I Do</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>HTML5, CSS3, JavaScript (ES6+)</td>
+                      <td>Building responsive and dynamic websites</td>
+                    </tr>
+                    <tr>
+                      <td>React</td>
+                      <td>Designing intuitive user interfaces</td>
+                    </tr>
+                    <tr>
+                      <td>Backend: Node.js, Express</td>
+                      <td>Developing eCommerce platforms</td>
+                    </tr>
+                    <tr>
+                      <td>Version Control: Git, GitHub</td>
+                      <td>
+                        Creating web applications with modern technologies
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================= slider project =====================-->
+    <main class="py-5" id="slider">
+      <div class="container">
+        <div class="dp-hader text-light">MY WORK</div>
+        <h1 class="text-light mt-3">RECENT PROJECT</h1>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="card1 text-center">
+                <div class="card-body card-inner">
+                  <div class="box">
+                    <div class="project-img">
+                      <img
+                        src="https://janna-react.vercel.app/images/popup-project-2.jpg"
+                        alt="..."
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="iocn">
+                      <a href="#" class="iocn-box">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">Web Design, App Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card1 text-center">
+                <div class="card-body card-inner">
+                  <div class="box">
+                    <div class="project-img">
+                      <img
+                        src="https://janna-react.vercel.app/images/popup-project-1.jpg"
+                        alt="..."
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="iocn">
+                      <a href="#" class="iocn-box">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">Web Design, App Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card1 text-center">
+                <div class="card-body card-inner">
+                  <div class="box">
+                    <div class="project-img">
+                      <img
+                        src="	https://janna-react.vercel.app/images/popup-project-3.jpg"
+                        alt="..."
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="iocn">
+                      <a href="#" class="iocn-box">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">Web Design, App Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card1 text-center">
+                <div class="card-body card-inner">
+                  <div class="box">
+                    <div class="project-img">
+                      <img
+                        src="https://janna-react.vercel.app/images/popup-project-6.jpg"
+                        alt="..."
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="iocn">
+                      <a href="#" class="iocn-box">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">Web Design, App Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card1 text-center">
+                <div class="card-body card-inner">
+                  <div class="box">
+                    <div class="project-img">
+                      <img
+                        src="https://janna-react.vercel.app/images/popup-project-3.jpg"
+                        alt="..."
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="iocn">
+                      <a href="#" class="iocn-box">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">Web Design, App Design</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card1 text-center">
+                <div class="card-body card-inner">
+                  <div class="box">
+                    <div class="project-img">
+                      <img
+                        src="	https://janna-react.vercel.app/images/popup-project-5.jpg"
+                        alt="..."
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="iocn">
+                      <a href="#" class="iocn-box">
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">Web Design, App Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================================Resume Path ===================-->
+    <main>
+      <div class="container">
+        <div class="edu-heding">
+          <h1 class="dp-hader text-light">Education</h1>
+          <h1>
+            <i class="fa-solid fa-school text-info"></i>
+          </h1>
+        </div>
+        <div class="edu-site text-light">
+          <div class="edu-inner left">
+            <div class="content">
+              <h3>
+                Master's Degree<span class="mx-3"
+                  ><i class="fa-solid fa-award"></i
+                ></span>
+              </h3>
+              <h5>
+                <strong class="text-info">L.J University</strong>-2023-2025
+              </h5>
+              <p>I have complete Msc_IT in L.J University</p>
+            </div>
+          </div>
+          <div class="edu-inner right">
+            <div class="content">
+              <h3>
+                Bachelor's Degree<span class="mx-3"
+                  ><i class="fa-solid fa-award"></i
+                ></span>
+              </h3>
+              <h5>
+                <strong class="text-info">L.J University</strong>-2020-2023
+              </h5>
+              <p>I have complete Bsc_IT in L.J University</p>
+            </div>
+          </div>
+          <div class="edu-inner left">
+            <div class="content">
+              <h3>
+                H.S.C<span class="mx-3"><i class="fa-solid fa-award"></i></span>
+              </h3>
+              <h5><strong class="text-info">V.K School</strong>-2018-2020</h5>
+              <p>I have complete H.S.C in V.K School</p>
+            </div>
+          </div>
+          <div class="edu-inner right">
+            <div class="content">
+              <h3>
+                S.S.C<span class="mx-3"><i class="fa-solid fa-award"></i></span>
+              </h3>
+              <h5><strong class="text-info">Arpan School</strong>-2018</h5>
+              <p>I have complete S.S.C in Arpan School</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ========================== SERVICES slider======================= -->
+    <main id="service" class="py-5">
+      <div class="container">
+        <div class="dp-hader text-light">SERVICES</div>
+        <h1 class="text-light mt-3 text-uppercase">
+          Design <span class="text-info">services</span> I am providing
+        </h1>
+        <div class="row gx-2 gy-2">
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="  https://janna-react.vercel.app/images/service-01.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay text-light">
+                <div class="social-iocn">
+                  <a href="#" class="btn btn-primary text-dark">
+                    <i class="fa-sharp fa-solid fa-pen-fancy"></i>
+                  </a>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <hr />
+                <div class="rating">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="https://janna-react.vercel.app/images/service-02.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay text-light">
+                <div class="social-iocn">
+                  <a href="#" class="btn btn-primary text-dark">
+                    <i class="fa-regular fa-file-code"></i>
+                  </a>
+                </div>
+                <h5 class="card-title">Website Design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore
+                </p>
+                <hr />
+                <div class="rating">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src="  https://janna-react.vercel.app/images/service-03.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay text-light">
+                <div class="social-iocn">
+                  <a href="#" class="btn btn-primary text-dark">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  </a>
+                </div>
+                <h5 class="card-title">SEO Marketing</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <hr />
+                <div class="rating">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <img
+                src=" https://janna-react.vercel.app/images/service-04.jpg"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay text-light">
+                <div class="social-iocn">
+                  <a href="#" class="btn btn-primary text-dark">
+                    <i class="fa-regular fa-file"></i>
+                  </a>
+                </div>
+                <h5 class="card-title">Graphic Design</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore.
+                </p>
+                <hr />
+                <div class="rating">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================Testimonial================================== -->
+    <main>
+      <div class="container">
+        <div class="text-center">
+          <div class="dp-hader text-light">SERVICES</div>
+          <h1 class="text-light mt-3 text-uppercase">
+            Over
+            <span class="text-info"> 8,000+ </span> <br />PEOPLE TRUST ME
+          </h1>
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+              <div class="sec-heading">
+                <h6>" Client's Says "</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="owl-carousel secondary-carousel">
+              <div class="item">
+                <div class="single-box">
+                  <div class="img-area">
+                    <img
+                      src="	https://janna-react.vercel.app/images/avatar-1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content-clint mt-2">
+                    <h3>JENNA</h3>
+                    <p class="p-txt">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Voluptatum, quidem commodi! Voluptate tenetur maiores,
+                      nulla, vitae inventore nihil dignissimos soluta, possimus
+                      delectus modi temporibus iusto laudantium repellendus
+                      perferendis error minima!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="single-box">
+                  <div class="img-area">
+                    <img
+                      src="https://janna-react.vercel.app/images/avatar-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="content-clint mt-2">
+                    <h3>Bianca</h3>
+                    <p class="p-txt">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Cupiditate quos quaerat, totam dolorum ea magnam, minus
+                      itaque, quas ab dignissimos facere voluptatem sit!
+                      Suscipit eos consectetur libero aut, tempore itaque?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========================== contact us ========================= -->
+    <main class="py-5" id="contact">
+      <div class="container">
+        <div class="contact-box px-3 py-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+              <div class="contact-img">
+                <img
+                  src="https://janna-react.vercel.app/images/contact-us.png"
+                  alt=""
+                />
+              </div>
+              <div class="mt-3 txt-info">
+                <label class="text-light"> Write an e-mail :- </label>
+                <a
+                  class="text-light text-decoration-none"
+                  href="mailto:dhruv.patel02012003@gmail.com"
+                >
+                  <br />
+                  <i class="fa-solid fa-envelope me-2"></i
+                  >dhruv.patel02012003@gmail.com</a
+                >
+              </div>
+              <div class="mt-3 txt-info">
+                <label class="text-light"> Call ME :- </label>
+                <a
+                  class="text-light text-decoration-none"
+                  href="tel:+918160149409"
+                  ><br />
+                  <i class="fa-solid fa-phone me-2"></i>
+                  +91 8160149409</a
+                >
+              </div>
+              <div class="social-iocn mt-3">
+                <a
+                  href="https://www.linkedin.com/in/patel-dhruv-b13023229/"
+                  type="button"
+                >
+                  <i class="fa-brands fa-linkedin text-light"></i>
+                </a>
+                <a href="#" type="button">
+                  <i class="fa-brands fa-facebook text-light"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-6 col-12">
+              <div class="contact-form">
+                <div class="contact-tital text-light">
+                  <h1>Let's Discuss Your Project</h1>
+                  <p class="p-txt">
+                    Always available for freelancing if the right project comes
+                    along, Feel free to contact me.
+                  </p>
+                </div>
+                <form class="row g-3 text-light mt-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control text-light"
+                      id="inputEmail4"
+                      placeholder="Email*"
+                      style="background-color: transparent"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control text-light"
+                      id="inputPassword4"
+                      placeholder="Password*"
+                      style="background-color: transparent"
+                    />
+                  </div>
+                  <div class="col-12 mt-3">
+                    <label for="inputAddress" class="form-label">SUBJECT</label>
+                    <input
+                      type="text"
+                      class="form-control text-light"
+                      id="inputAddress"
+                      placeholder="Subject*"
+                      style="background-color: transparent"
+                    />
+                  </div>
+                  <div class="mb-3 mt-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control text-light"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                      placeholder="Message*"
+                      style="background-color: transparent"
+                    ></textarea>
+                  </div>
+                  <div class="d-grid gap-2">
+                    <a
+                      class="nav-btn-1 bg-btn text-light text-center"
+                      href="#"
+                      role="button"
+                      >SEND MASSAGE
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ============================ backToTop ================================= -->
+    <div class="container">
+      <button id="backToTop" class="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <!-- ========================= Copyright all  ============================= -->
+    <div class="container-fluid text-light text-center py-3">
+      <ul class="social-media">
+        <li class="social-i">
+          <a href="" class="footer-icon" type="button"
+            ><i class="fa-brands fa-facebook icon"></i
+          ></a>
+        </li>
+        <li class="social-i">
+          <a
+            href="https://www.instagram.com/_dp_patel_11/?hl=en"
+            class="footer-icon"
+            type="button"
+          >
+            <i class="fa-brands fa-instagram icon"></i
+          ></a>
+        </li>
+        <li class="social-i">
+          <a href="" class="footer-icon" type="button"
+            ><i class="fa-brands fa-x-twitter icon"></i
+          ></a>
+        </li>
+        <li class="social-i">
+          <a
+            href="https://www.linkedin.com/in/patel-dhruv-b13023229/"
+            class="footer-icon"
+            type="button"
+            ><i class="fa-brands fa-linkedin icon"></i
+          ></a>
+        </li>
+        <li class="social-i">
+          <a
+            href="https://github.com/PatelDhruv11"
+            class="footer-icon"
+            type="button"
+            ><i class="fa-brands fa-github icon"></i
+          ></a>
+        </li>
+      </ul>
+      <hr />
+      <label>© 2025 copyright all right reserved Created By Dhurv Patel</label>
+    </div>
+
+    <!--- ======== bootsrtap js ========= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <!-- jQuery and Owl Carousel's JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="public/assets/js/script.js"></script>
+  </body>
+</html>

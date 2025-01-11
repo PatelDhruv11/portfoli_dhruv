@@ -1,0 +1,81 @@
+body {
+  overflow-x: hidden;
+  background: var(--px-theme-main);
+  color: #fff;
+  font-family: "Poppins", serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+:root {
+  --bs-heading-color: #ffff;
+  --px-theme: #0788ff;
+  --px-theme-rgb: 7, 136, 255;
+  --px-black: #040c16;
+  --px-white: #fff;
+  --px-text: #707476;
+  --px-heading: #fff;
+  --px-slider: #032545;
+  --px-theme-main: linear-gradient(
+    90deg,
+    #07233b 1.67%,
+    #041d34 39.95%,
+    #04192d 58.24%,
+    #040e18 80.28%,
+    #050c16 101%
+  );
+}
+
+.btn-header {
+  margin: 10px;
+}
+.bg-bcak {
+  background-color: var(--px-theme-main);
+}
+.bg-btn {
+  background-color: var(--px-theme);
+}
+
+/* nav-btn */
+.nav-btn,
+.nav-btn-1 {
+  text-decoration: none;
+  padding: 13px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 40px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.nav-btn:hover {
+  background-color: transparent;
+  outline: 2px solid var(--px-white); /* Use outline instead of border */
+}
+
+.nav-btn-1:hover {
+  background-color: transparent;
+  outline: 1px solid var(--px-white); /* Use outline instead of border */
+}
+
+/* dp-hader */
+.dp-hader {
+  background: rgba(var(--px-theme-rgb), 0.2);
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 4px;
+  line-height: 20px;
+  padding: 5px 12px;
+}
+
+@media (max-width: 600px) {
+  .p-txt {
+    font-size: 15px;
+  }
+}

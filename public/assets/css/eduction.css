@@ -1,0 +1,86 @@
+.edu-site {
+  padding: 20px 0;
+  position: relative;
+}
+.edu-site::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: var(--px-theme);
+}
+.edu-inner.left::after {
+  content: "";
+  position: absolute;
+  top: 125px;
+  bottom: 0;
+  right: 0px;
+  height: 1px;
+  width: 30px;
+  background: var(--px-theme);
+}
+.edu-inner.right::after {
+  content: "";
+  position: absolute;
+  top: 125px;
+  bottom: 0;
+  left: 0px;
+  height: 1px;
+  width: 30px;
+  background: var(--px-theme);
+}
+.edu-inner {
+  position: relative;
+  width: 50%;
+  padding: 20px 30px;
+}
+.edu-inner.left {
+  left: 0;
+}
+.edu-inner.right {
+  left: 50%;
+}
+.content:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.content {
+  position: relative;
+  background-color: var(--px-slider);
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.edu-heding {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .edu-site::before {
+    left: 5%;
+  }
+  .edu-inner {
+    width: 90%;
+    left: 5% !important;
+    margin-bottom: 20px;
+  }
+  .edu-inner.left::after {
+    content: "";
+    position: absolute;
+    top: 125px;
+    left: 0px;
+    bottom: 0;
+    right: 0px;
+    height: 1px;
+    width: 30px;
+    background: var(--px-theme);
+  }
+  .edu-heding {
+    text-align: left;
+  }
+}

@@ -1,0 +1,81 @@
+/* social icon */
+.social-iocn {
+  margin: 10px;
+}
+.social-iocn a {
+  align-items: center;
+  border: 2px solid var(--px-white);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 46px;
+  color: var(--px-white);
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 8px;
+  position: relative;
+  top: 0;
+  width: 46px;
+  background-color: var(--px-theme);
+}
+.social-iocn a:hover {
+  background-color: transparent;
+}
+
+/* my image */
+.img-container {
+  /* border: 1px solid yellow; */
+  max-width: 350px !important;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  /* animation: slideImage 5s linear infinite;
+  width: 100%; Adjust the size if needed */
+}
+
+@media (max-width: 600px) {
+  .img-container {
+    max-width: 260px !important;
+  }
+  .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .hero-flex {
+    flex-direction: column-reverse;
+  }
+}
+
+/* @keyframes slideImage {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+} */
+
+.bg-key {
+  background: linear-gradient(
+    90deg,
+    #07233b 1.67%,
+    #041d34 39.95%,
+    #04192d 58.24%,
+    #040e18 80.28%,
+    #050c16 101%
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
