@@ -4,7 +4,7 @@
 }
 .social-iocn a {
   align-items: center;
-  border: 2px solid var(--px-white);
+  border: 1px solid var(--px-white);
   border-radius: 50%;
   display: inline-flex;
   height: 46px;
@@ -19,11 +19,11 @@
 }
 .social-iocn a:hover {
   background-color: transparent;
+  color: var(--px-white);
 }
 
 /* my image */
 .img-container {
-  /* border: 1px solid yellow; */
   max-width: 350px !important;
 }
 
